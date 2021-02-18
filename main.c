@@ -55,7 +55,7 @@ uint8_t recv_pkt(void) {
 					pw = 0;
 				}
 			} else if (state == 2) {
-				if (c >= '0' && c <= '5') {
+				if (c >= '0' && c <= '9') {
 					pw *= 10;
 					pw += c - '0';
 				} else if (c == ',') {
